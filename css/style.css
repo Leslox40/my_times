@@ -1,7 +1,8 @@
 body {
-	font-family: Verdana;
+	text-align: center;
 }
 header {
+	font-family: Verdana;
 	font-weight: bold;
 	display: flex;
 	height: 80px;
@@ -9,12 +10,15 @@ header {
 	align-items: center;
 	border-bottom: 1px solid black;
 	width: 100%;
+	/*position: fixed;*/
+	/*z-index: 1;*/
 }
 .logo {
 	padding-left: 30px;
 	flex-grow: 1;
 	display: inline-flex;
 	align-items: center;
+	border: 1px solid black;
 
 }
 
@@ -38,4 +42,33 @@ nav span {
 }
 nav a {
 	color: black;
+}
+div {
+	border: 1px solid black;
+}
+.container {
+	display: flex;
+	/*justify-content: space-between;*/
+	width: 1232px;
+	margin: 0 auto 78px auto;
+}
+.column.large-section {
+	width: 630px;
+	display: flex;
+	flex-direction: column;
+}
+.column.medium-section {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+.column.small-section {
+	width: 240px;
+	display: flex;
+	flex-direction: column;
+}
+.column.large-section, 
+.column.medium-section,
+.column.small-section {
+	margin-right: 32px;
 }
